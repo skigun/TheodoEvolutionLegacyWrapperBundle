@@ -22,7 +22,7 @@ namespace Theodo\Evolution\Bundle\LegacyWrapperBundle\Kernel {
         /**
          * {@inheritdoc}
          */
-        public function handle(Request $request, $type = self::MASTER_REQUEST, $catch = true)
+        public function handle(Request $request, $type = self::MASTER_REQUEST, $catch = true): Response
         {
             $session = $request->getSession();
             if ($session->isStarted()) {
